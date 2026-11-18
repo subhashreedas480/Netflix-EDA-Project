@@ -77,7 +77,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-from google.colab import files
+
 import io
 
 from sklearn.preprocessing import LabelEncoder, StandardScaler
