@@ -108,16 +108,11 @@ from google.colab import files
 # Step 2: Load Dataset
 
 # Upload the file from your local system
-uploaded = files.upload()
+# Step 2: Load Dataset
 
-# Check if a file was uploaded
-if uploaded:
-    for filename in uploaded.keys():
-        df = pd.read_csv(io.BytesIO(uploaded[filename]))
-        print(f"File '{filename}' loaded successfully!")
-else:
-    print("No file was uploaded. Please upload 'netflix_data.csv'.")
+df = pd.read_csv("netflix_data.csv")
 
+# Display first 5 rows
 df.head()
 
 #Step 4: Check Dataset
